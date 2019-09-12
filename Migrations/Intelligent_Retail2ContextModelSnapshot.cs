@@ -18,6 +18,33 @@ namespace Intelligent_Retail2.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Intelligent_Retail2.Models.AdminUser", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AdminPassword");
+
+                    b.Property<string>("AdminUserEmail")
+                        .IsRequired();
+
+                    b.Property<string>("AdminUserName")
+                        .IsRequired();
+
+                    b.Property<string>("AdminUserNumber")
+                        .IsRequired();
+
+                    b.Property<string>("AdminUserPhone")
+                        .IsRequired();
+
+                    b.Property<string>("AdminUserRole");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("AdminUser");
+                });
+
             modelBuilder.Entity("Intelligent_Retail2.Models.User", b =>
                 {
                     b.Property<int>("ID")

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Intelligent_Retail2.Migrations
 {
     [DbContext(typeof(Intelligent_Retail2Context))]
-    [Migration("20190912080936_Initial")]
+    [Migration("20190912090337_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -19,6 +19,33 @@ namespace Intelligent_Retail2.Migrations
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("Intelligent_Retail2.Models.AdminUser", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AdminPassword");
+
+                    b.Property<string>("AdminUserEmail")
+                        .IsRequired();
+
+                    b.Property<string>("AdminUserName")
+                        .IsRequired();
+
+                    b.Property<string>("AdminUserNumber")
+                        .IsRequired();
+
+                    b.Property<string>("AdminUserPhone")
+                        .IsRequired();
+
+                    b.Property<string>("AdminUserRole");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("AdminUser");
+                });
 
             modelBuilder.Entity("Intelligent_Retail2.Models.User", b =>
                 {

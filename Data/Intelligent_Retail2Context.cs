@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Intelligent_Retail2.Models;
 
 namespace Intelligent_Retail2.Models
 {
@@ -14,5 +15,7 @@ namespace Intelligent_Retail2.Models
         }
 
         public DbSet<Intelligent_Retail2.Models.User> User { get; set; }
+
+        public DbSet<Intelligent_Retail2.Models.AdminUser> AdminUser { get; set; }
     }
 }
