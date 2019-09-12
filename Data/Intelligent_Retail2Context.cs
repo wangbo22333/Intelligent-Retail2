@@ -17,5 +17,7 @@ namespace Intelligent_Retail2.Models
         public DbSet<Intelligent_Retail2.Models.User> User { get; set; }
 
         public DbSet<Intelligent_Retail2.Models.AdminUser> AdminUser { get; set; }
+
+        public DbSet<Intelligent_Retail2.Models.DeviceManage> DeviceManage { get; set; }
     }
 }

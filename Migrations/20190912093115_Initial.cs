@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Intelligent_Retail2.Migrations
@@ -26,6 +27,25 @@ namespace Intelligent_Retail2.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "DeviceManage",
+                columns: table => new
+                {
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    DeviceNumber = table.Column<string>(nullable: false),
+                    DeviceProductKey = table.Column<string>(nullable: false),
+                    DeviceSecret = table.Column<string>(nullable: false),
+                    DeviceProvince = table.Column<string>(nullable: false),
+                    DeviceCity = table.Column<string>(nullable: false),
+                    DeviceAddress = table.Column<string>(nullable: false),
+                    DeviceSetDay = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DeviceManage", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "User",
                 columns: table => new
                 {
@@ -46,6 +66,9 @@ namespace Intelligent_Retail2.Migrations
         {
             migrationBuilder.DropTable(
                 name: "AdminUser");
+
+            migrationBuilder.DropTable(
+                name: "DeviceManage");
 
             migrationBuilder.DropTable(
                 name: "User");
