@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Intelligent_Retail2.Models;
 
 namespace Intelligent_Retail2
 {
@@ -33,6 +35,9 @@ namespace Intelligent_Retail2
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddDbContext<Intelligent_Retail2Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Intelligent_Retail2Context")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
