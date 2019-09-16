@@ -53,7 +53,7 @@ namespace Intelligent_Retail2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,DeviceNumber,DeviceProductKey,DeviceSecret,DeviceProvince,DeviceCity,DeviceAddress,DeviceSetDay")] DeviceManage deviceManage)
+        public async Task<IActionResult> Create([Bind("ID,DeviceID,DeviceNumber,DeviceProductKey,DeviceSecret,DeviceProvince,DeviceCity,DeviceAddress,DeviceSetDay")] DeviceManage deviceManage)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace Intelligent_Retail2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,DeviceNumber,DeviceProductKey,DeviceSecret,DeviceProvince,DeviceCity,DeviceAddress,DeviceSetDay")] DeviceManage deviceManage)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,DeviceID,DeviceNumber,DeviceProductKey,DeviceSecret,DeviceProvince,DeviceCity,DeviceAddress,DeviceSetDay")] DeviceManage deviceManage)
         {
             if (id != deviceManage.ID)
             {

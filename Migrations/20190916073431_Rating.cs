@@ -32,6 +32,7 @@ namespace Intelligent_Retail2.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    BrandID = table.Column<string>(nullable: true),
                     BrandName = table.Column<string>(nullable: true),
                     BrandInfo = table.Column<string>(nullable: true)
                 },
@@ -46,6 +47,7 @@ namespace Intelligent_Retail2.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    ProductID = table.Column<string>(nullable: true),
                     CategoryID = table.Column<string>(nullable: true),
                     BrandID = table.Column<string>(nullable: true),
                     ProductName = table.Column<string>(nullable: true),
@@ -65,6 +67,7 @@ namespace Intelligent_Retail2.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    DeviceID = table.Column<string>(nullable: false),
                     DeviceNumber = table.Column<string>(nullable: false),
                     DeviceProductKey = table.Column<string>(nullable: false),
                     DeviceSecret = table.Column<string>(nullable: false),
@@ -84,7 +87,7 @@ namespace Intelligent_Retail2.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    DeviceID = table.Column<int>(nullable: false),
+                    DeviceID = table.Column<string>(nullable: true),
                     ProductID = table.Column<string>(nullable: true),
                     DeviceProductStock = table.Column<int>(nullable: false),
                     DeviceProductSale = table.Column<int>(nullable: false)
@@ -100,6 +103,7 @@ namespace Intelligent_Retail2.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    CategoryID = table.Column<string>(nullable: true),
                     CategoryName = table.Column<string>(nullable: true),
                     CategoryInfo = table.Column<string>(nullable: true)
                 },
@@ -117,11 +121,27 @@ namespace Intelligent_Retail2.Migrations
                     UserNickName = table.Column<string>(nullable: true),
                     UserOpenID = table.Column<string>(nullable: true),
                     UserPhone = table.Column<string>(nullable: true),
-                    UserGender = table.Column<string>(nullable: true)
+                    UserGender = table.Column<string>(nullable: true),
+                    UserBirthday = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_User", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserOrder",
+                columns: table => new
+                {
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    UserOrderID = table.Column<string>(nullable: true),
+                    UserPhone = table.Column<string>(nullable: true),
+                    ProductID = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserOrder", x => x.ID);
                 });
         }
 
@@ -147,6 +167,9 @@ namespace Intelligent_Retail2.Migrations
 
             migrationBuilder.DropTable(
                 name: "User");
+
+            migrationBuilder.DropTable(
+                name: "UserOrder");
         }
     }
 }

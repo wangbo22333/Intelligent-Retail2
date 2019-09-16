@@ -9,22 +9,22 @@ using Intelligent_Retail2.Models;
 
 namespace Intelligent_Retail2.Controllers
 {
-    public class UsersController : Controller
+    public class UserOrdersController : Controller
     {
         private readonly Intelligent_Retail2Context _context;
 
-        public UsersController(Intelligent_Retail2Context context)
+        public UserOrdersController(Intelligent_Retail2Context context)
         {
             _context = context;
         }
 
-        // GET: Users
+        // GET: UserOrders
         public async Task<IActionResult> Index()
         {
-            return View(await _context.User.ToListAsync());
+            return View(await _context.UserOrder.ToListAsync());
         }
 
-        // GET: Users/Details/5
+        // GET: UserOrders/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,39 +32,39 @@ namespace Intelligent_Retail2.Controllers
                 return NotFound();
             }
 
-            var user = await _context.User
+            var userOrder = await _context.UserOrder
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (user == null)
+            if (userOrder == null)
             {
                 return NotFound();
             }
 
-            return View(user);
+            return View(userOrder);
         }
 
-        // GET: Users/Create
+        // GET: UserOrders/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Users/Create
+        // POST: UserOrders/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,UserNickName,UserOpenID,UserPhone,UserGender,UserBirthday")] User user)
+        public async Task<IActionResult> Create([Bind("ID,UserOrderID,UserPhone,ProductID")] UserOrder userOrder)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(user);
+                _context.Add(userOrder);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(user);
+            return View(userOrder);
         }
 
-        // GET: Users/Edit/5
+        // GET: UserOrders/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -72,22 +72,22 @@ namespace Intelligent_Retail2.Controllers
                 return NotFound();
             }
 
-            var user = await _context.User.FindAsync(id);
-            if (user == null)
+            var userOrder = await _context.UserOrder.FindAsync(id);
+            if (userOrder == null)
             {
                 return NotFound();
             }
-            return View(user);
+            return View(userOrder);
         }
 
-        // POST: Users/Edit/5
+        // POST: UserOrders/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,UserNickName,UserOpenID,UserPhone,UserGender,UserBirthday")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,UserOrderID,UserPhone,ProductID")] UserOrder userOrder)
         {
-            if (id != user.ID)
+            if (id != userOrder.ID)
             {
                 return NotFound();
             }
@@ -96,12 +96,12 @@ namespace Intelligent_Retail2.Controllers
             {
                 try
                 {
-                    _context.Update(user);
+                    _context.Update(userOrder);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UserExists(user.ID))
+                    if (!UserOrderExists(userOrder.ID))
                     {
                         return NotFound();
                     }
@@ -112,10 +112,10 @@ namespace Intelligent_Retail2.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(user);
+            return View(userOrder);
         }
 
-        // GET: Users/Delete/5
+        // GET: UserOrders/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -123,30 +123,30 @@ namespace Intelligent_Retail2.Controllers
                 return NotFound();
             }
 
-            var user = await _context.User
+            var userOrder = await _context.UserOrder
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (user == null)
+            if (userOrder == null)
             {
                 return NotFound();
             }
 
-            return View(user);
+            return View(userOrder);
         }
 
-        // POST: Users/Delete/5
+        // POST: UserOrders/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var user = await _context.User.FindAsync(id);
-            _context.User.Remove(user);
+            var userOrder = await _context.UserOrder.FindAsync(id);
+            _context.UserOrder.Remove(userOrder);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool UserExists(int id)
+        private bool UserOrderExists(int id)
         {
-            return _context.User.Any(e => e.ID == id);
+            return _context.UserOrder.Any(e => e.ID == id);
         }
     }
 }

@@ -27,5 +27,7 @@ namespace Intelligent_Retail2.Models
         public DbSet<Intelligent_Retail2.Models.ProductCategory> ProductCategory { get; set; }
 
         public DbSet<Intelligent_Retail2.Models.DeviceProduct> DeviceProduct { get; set; }
+
+        public DbSet<Intelligent_Retail2.Models.UserOrder> UserOrder { get; set; }
     }
 }

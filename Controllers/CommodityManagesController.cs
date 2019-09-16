@@ -53,7 +53,7 @@ namespace Intelligent_Retail2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,CategoryID,BrandID,ProductName,ProductImage,ProductPrice,ProductStock,ProductSale")] CommodityManage commodityManage)
+        public async Task<IActionResult> Create([Bind("ID,ProductID,CategoryID,BrandID,ProductName,ProductImage,ProductPrice,ProductStock,ProductSale")] CommodityManage commodityManage)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace Intelligent_Retail2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,CategoryID,BrandID,ProductName,ProductImage,ProductPrice,ProductStock,ProductSale")] CommodityManage commodityManage)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,ProductID,CategoryID,BrandID,ProductName,ProductImage,ProductPrice,ProductStock,ProductSale")] CommodityManage commodityManage)
         {
             if (id != commodityManage.ID)
             {

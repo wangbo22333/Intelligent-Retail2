@@ -52,6 +52,8 @@ namespace Intelligent_Retail2.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("BrandID");
+
                     b.Property<string>("BrandInfo");
 
                     b.Property<string>("BrandName");
@@ -70,6 +72,8 @@ namespace Intelligent_Retail2.Migrations
                     b.Property<string>("BrandID");
 
                     b.Property<string>("CategoryID");
+
+                    b.Property<string>("ProductID");
 
                     b.Property<string>("ProductImage");
 
@@ -98,6 +102,9 @@ namespace Intelligent_Retail2.Migrations
                     b.Property<string>("DeviceCity")
                         .IsRequired();
 
+                    b.Property<string>("DeviceID")
+                        .IsRequired();
+
                     b.Property<string>("DeviceNumber")
                         .IsRequired();
 
@@ -123,7 +130,7 @@ namespace Intelligent_Retail2.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("DeviceID");
+                    b.Property<string>("DeviceID");
 
                     b.Property<int>("DeviceProductSale");
 
@@ -142,6 +149,8 @@ namespace Intelligent_Retail2.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("CategoryID");
+
                     b.Property<string>("CategoryInfo");
 
                     b.Property<string>("CategoryName");
@@ -157,6 +166,8 @@ namespace Intelligent_Retail2.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime>("UserBirthday");
+
                     b.Property<string>("UserGender");
 
                     b.Property<string>("UserNickName");
@@ -168,6 +179,23 @@ namespace Intelligent_Retail2.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("Intelligent_Retail2.Models.UserOrder", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ProductID");
+
+                    b.Property<string>("UserOrderID");
+
+                    b.Property<string>("UserPhone");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("UserOrder");
                 });
 #pragma warning restore 612, 618
         }

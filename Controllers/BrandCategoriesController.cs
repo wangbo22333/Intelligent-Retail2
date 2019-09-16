@@ -53,7 +53,7 @@ namespace Intelligent_Retail2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,BrandName,BrandInfo")] BrandCategory brandCategory)
+        public async Task<IActionResult> Create([Bind("ID,BrandID,BrandName,BrandInfo")] BrandCategory brandCategory)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace Intelligent_Retail2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,BrandName,BrandInfo")] BrandCategory brandCategory)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,BrandID,BrandName,BrandInfo")] BrandCategory brandCategory)
         {
             if (id != brandCategory.ID)
             {

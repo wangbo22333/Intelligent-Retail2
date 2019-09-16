@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Intelligent_Retail2.Models.ProductCategory>
+﻿@model IEnumerable<Intelligent_Retail2.Models.UserOrder>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,13 +13,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.CategoryID)
+                @Html.DisplayNameFor(model => model.UserOrderID)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CategoryName)
+                @Html.DisplayNameFor(model => model.UserPhone)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CategoryInfo)
+                @Html.DisplayNameFor(model => model.ProductID)
             </th>
             <th></th>
         </tr>
@@ -28,13 +28,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.CategoryID)
+                @Html.DisplayFor(modelItem => item.UserOrderID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CategoryName)
+                @Html.DisplayFor(modelItem => item.UserPhone)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CategoryInfo)
+                @Html.DisplayFor(modelItem => item.ProductID)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
