@@ -9,6 +9,8 @@ namespace Intelligent_Retail2.Models
     public class ProductCategory
     {
         public int ID { get; set; }
+        [DisplayName("商品类别编号")]
+        public string CategoryID { get; set; }
         [DisplayName("类别名称")]
         public string CategoryName { get; set; }
         [DisplayName("类别信息")]

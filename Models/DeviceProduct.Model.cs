@@ -9,13 +9,13 @@ namespace Intelligent_Retail2.Models
     public class DeviceProduct
     {
         public int ID { get; set; }
-        [DisplayName("设备ID")]
-        public int DeviceID { get; set; }
-        [DisplayName("商品ID")]
+        [DisplayName("设备编号")]
+        public string DeviceID { get; set; }
+        [DisplayName("商品编号")]
         public string ProductID { get; set; }
-        [DisplayName("本机商品库存")]
+        [DisplayName("本机该商品库存")]
         public int DeviceProductStock { get; set; }
-        [DisplayName("本机商品销量")]
+        [DisplayName("本机该商品销量")]
         public int DeviceProductSale { get; set; }
 
 

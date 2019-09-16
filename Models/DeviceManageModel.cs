@@ -10,6 +10,9 @@ namespace Intelligent_Retail2.Models
     public class DeviceManage
     {
         public int ID { get; set; }
+        [DisplayName("设备编号")]
+        [Required(ErrorMessage = "必须填写设备编号")]
+        public string DeviceID { get; set; }
         [Required(ErrorMessage ="必须填写设备三元组")]
         public string DeviceNumber { get; set; }
         [Required(ErrorMessage = "必须填写设备三元组")]

@@ -9,9 +9,11 @@ namespace Intelligent_Retail2.Models
     public class CommodityManage
     {
         public int ID { get; set; }
-        [DisplayName("商品类别ID")]
+        [DisplayName("商品编号")]
+        public string ProductID { get; set; }
+        [DisplayName("商品类别编号")]
         public string CategoryID { get; set; }
-        [DisplayName("品牌ID")]
+        [DisplayName("品牌编号")]
         public string BrandID { get; set; }
         [DisplayName("商品名称")]
         public string ProductName { get; set; }

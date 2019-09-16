@@ -19,6 +19,8 @@ namespace Intelligent_Retail2.Models
         public string UserPhone { get; set; }
         [DisplayName("用户性别")]
         public string UserGender { get; set; }
+        [DisplayName("用户生日")]
+        public DateTime UserBirthday { get; set; }
         
 
     }
