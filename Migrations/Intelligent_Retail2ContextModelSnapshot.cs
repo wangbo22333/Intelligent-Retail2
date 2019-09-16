@@ -85,6 +85,8 @@ namespace Intelligent_Retail2.Migrations
 
                     b.Property<int>("ProductStock");
 
+                    b.Property<string>("ProductWeight");
+
                     b.HasKey("ID");
 
                     b.ToTable("CommodityManage");

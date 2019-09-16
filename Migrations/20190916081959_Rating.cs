@@ -52,6 +52,7 @@ namespace Intelligent_Retail2.Migrations
                     BrandID = table.Column<string>(nullable: true),
                     ProductName = table.Column<string>(nullable: true),
                     ProductImage = table.Column<string>(nullable: true),
+                    ProductWeight = table.Column<string>(nullable: true),
                     ProductPrice = table.Column<string>(nullable: true),
                     ProductStock = table.Column<int>(nullable: false),
                     ProductSale = table.Column<int>(nullable: false)

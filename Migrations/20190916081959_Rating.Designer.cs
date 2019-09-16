@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Intelligent_Retail2.Migrations
 {
     [DbContext(typeof(Intelligent_Retail2Context))]
-    [Migration("20190916073431_Rating")]
+    [Migration("20190916081959_Rating")]
     partial class Rating
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -86,6 +86,8 @@ namespace Intelligent_Retail2.Migrations
                     b.Property<int>("ProductSale");
 
                     b.Property<int>("ProductStock");
+
+                    b.Property<string>("ProductWeight");
 
                     b.HasKey("ID");
 

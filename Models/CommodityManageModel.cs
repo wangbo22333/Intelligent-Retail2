@@ -19,6 +19,8 @@ namespace Intelligent_Retail2.Models
         public string ProductName { get; set; }
         [DisplayName("商品图片")]
         public string ProductImage { get; set; }
+        [DisplayName("商品重量")]
+        public string ProductWeight { get; set; }
         [DisplayName("商品价格")]
         public string ProductPrice { get; set; }
         [DisplayName("商品总库存")]
