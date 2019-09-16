@@ -119,7 +119,67 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
+                        ProductID = "10003",
+                        CategoryID = "1000",
+                        BrandID = "1000",
+                        ProductName = "芬达330ml",
+                        ProductImage = "图片路径",
+                        ProductWeight = "330",
+                        ProductPrice = "2.5",
+                        ProductStock = 1120,
+                        ProductSale = 58
+                    },
+                    new CommodityManage
+                    {
+                        ProductID = "10004",
+                        CategoryID = "1000",
+                        BrandID = "1001",
+                        ProductName = "百事可乐330ml",
+                        ProductImage = "图片路径",
+                        ProductWeight = "330",
+                        ProductPrice = "2.5",
+                        ProductStock = 1531,
+                        ProductSale = 253
+                    },
+                    new CommodityManage
+                    {
+                        ProductID = "10005",
+                        CategoryID = "1000",
+                        BrandID = "1001",
+                        ProductName = "美年达330ml",
+                        ProductImage = "图片路径",
+                        ProductWeight = "330",
+                        ProductPrice = "2.5",
+                        ProductStock = 1321,
+                        ProductSale = 241
+                    }, 
+                    new CommodityManage
+                    {
+                        ProductID = "10006",
+                        CategoryID = "1000",
+                        BrandID = "1001",
+                        ProductName = "七喜330ml",
+                        ProductImage = "图片路径",
+                        ProductWeight = "330",
+                        ProductPrice = "2.5",
+                        ProductStock = 1309,
+                        ProductSale = 286
+                    },
+                    new CommodityManage
+                    {
+                        ProductID = "10007",
+                        CategoryID = "1000",
+                        BrandID = "1002",
+                        ProductName = "可口可乐330ml",
+                        ProductImage = "图片路径",
+                        ProductWeight = "330",
+                        ProductPrice = "2.5",
+                        ProductStock = 1000,
+                        ProductSale = 199
+                    },
+                    new CommodityManage
+                    {
+                        ProductID = "10008",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -131,7 +191,7 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
+                        ProductID = "10009",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -143,7 +203,7 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
+                        ProductID = "10010",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -155,7 +215,7 @@ namespace Intelligent_Retail2.Models
                     }, 
                     new CommodityManage
                     {
-                        ProductID = "10001",
+                        ProductID = "10011",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -167,7 +227,7 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
+                        ProductID = "10012",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -179,7 +239,7 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
+                        ProductID = "10013",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -191,7 +251,7 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
+                        ProductID = "10014",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -203,19 +263,7 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
-                        CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
-                        ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
-                    }, 
-                    new CommodityManage
-                    {
-                        ProductID = "10001",
+                        ProductID = "10015",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -227,7 +275,7 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
+                        ProductID = "10016",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -239,7 +287,7 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
+                        ProductID = "10017",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
@@ -251,19 +299,7 @@ namespace Intelligent_Retail2.Models
                     },
                     new CommodityManage
                     {
-                        ProductID = "10001",
-                        CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
-                        ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
-                    },
-                    new CommodityManage
-                    {
-                        ProductID = "10001",
+                        ProductID = "10018",
                         CategoryID = "1000",
                         BrandID = "1000",
                         ProductName = "可口可乐330ml",
