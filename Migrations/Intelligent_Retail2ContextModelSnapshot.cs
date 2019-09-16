@@ -46,6 +46,46 @@ namespace Intelligent_Retail2.Migrations
                     b.ToTable("AdminUser");
                 });
 
+            modelBuilder.Entity("Intelligent_Retail2.Models.BrandCategory", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BrandInfo");
+
+                    b.Property<string>("BrandName");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("BrandCategory");
+                });
+
+            modelBuilder.Entity("Intelligent_Retail2.Models.CommodityManage", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BrandID");
+
+                    b.Property<string>("CategoryID");
+
+                    b.Property<string>("ProductImage");
+
+                    b.Property<string>("ProductName");
+
+                    b.Property<string>("ProductPrice");
+
+                    b.Property<int>("ProductSale");
+
+                    b.Property<int>("ProductStock");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("CommodityManage");
+                });
+
             modelBuilder.Entity("Intelligent_Retail2.Models.DeviceManage", b =>
                 {
                     b.Property<int>("ID")
@@ -75,6 +115,40 @@ namespace Intelligent_Retail2.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("DeviceManage");
+                });
+
+            modelBuilder.Entity("Intelligent_Retail2.Models.DeviceProduct", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("DeviceID");
+
+                    b.Property<int>("DeviceProductSale");
+
+                    b.Property<int>("DeviceProductStock");
+
+                    b.Property<string>("ProductID");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("DeviceProduct");
+                });
+
+            modelBuilder.Entity("Intelligent_Retail2.Models.ProductCategory", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CategoryInfo");
+
+                    b.Property<string>("CategoryName");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("ProductCategory");
                 });
 
             modelBuilder.Entity("Intelligent_Retail2.Models.User", b =>

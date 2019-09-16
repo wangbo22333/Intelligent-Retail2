@@ -19,5 +19,13 @@ namespace Intelligent_Retail2.Models
         public DbSet<Intelligent_Retail2.Models.AdminUser> AdminUser { get; set; }
 
         public DbSet<Intelligent_Retail2.Models.DeviceManage> DeviceManage { get; set; }
+
+        public DbSet<Intelligent_Retail2.Models.CommodityManage> CommodityManage { get; set; }
+
+        public DbSet<Intelligent_Retail2.Models.BrandCategory> BrandCategory { get; set; }
+
+        public DbSet<Intelligent_Retail2.Models.ProductCategory> ProductCategory { get; set; }
+
+        public DbSet<Intelligent_Retail2.Models.DeviceProduct> DeviceProduct { get; set; }
     }
 }
