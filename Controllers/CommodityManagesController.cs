@@ -21,7 +21,12 @@ namespace Intelligent_Retail2.Controllers
         // GET: CommodityManages
         public async Task<IActionResult> Index()
         {
-            return View(await _context.CommodityManage.ToListAsync());
+            //return View(await _context.CommodityManage.ToListAsync());
+            var result = from m in _context.CommodityManage
+                         select m;
+            result = result.OrderBy(m => m.ProductID);
+            return View(await result.ToListAsync());
+
         }
 
         // GET: CommodityManages/Details/5
