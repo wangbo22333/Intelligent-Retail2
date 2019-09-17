@@ -138,7 +138,8 @@ namespace Intelligent_Retail2.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     UserOrderID = table.Column<string>(nullable: true),
                     UserPhone = table.Column<string>(nullable: true),
-                    ProductID = table.Column<string>(nullable: true)
+                    ProductID = table.Column<string>(nullable: true),
+                    ProductNumber = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

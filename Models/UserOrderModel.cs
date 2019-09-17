@@ -15,6 +15,8 @@ namespace Intelligent_Retail2.Models
         public string UserPhone { get; set; }
         [DisplayName("商品编号")]
         public string ProductID { get; set; }
+        [DisplayName("该商品数量")]
+        public int ProductNumber { get; set; }
 
 
     }

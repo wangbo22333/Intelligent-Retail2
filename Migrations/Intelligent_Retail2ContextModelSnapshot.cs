@@ -191,6 +191,8 @@ namespace Intelligent_Retail2.Migrations
 
                     b.Property<string>("ProductID");
 
+                    b.Property<int>("ProductNumber");
+
                     b.Property<string>("UserOrderID");
 
                     b.Property<string>("UserPhone");

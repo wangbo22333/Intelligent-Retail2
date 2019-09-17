@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Intelligent_Retail2.Migrations
 {
     [DbContext(typeof(Intelligent_Retail2Context))]
-    [Migration("20190916081959_Rating")]
+    [Migration("20190917030255_Rating")]
     partial class Rating
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -192,6 +192,8 @@ namespace Intelligent_Retail2.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ProductID");
+
+                    b.Property<int>("ProductNumber");
 
                     b.Property<string>("UserOrderID");
 

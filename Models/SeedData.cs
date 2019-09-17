@@ -70,8 +70,8 @@ namespace Intelligent_Retail2.Models
                     new BrandCategory
                     {
                         BrandID = "1003",
-                        BrandName = "汇源果汁",
-                        BrandInfo = "汇源果汁的一些供应商信息"
+                        BrandName = "维他奶",
+                        BrandInfo = "维他奶的一些供应商信息"
                     },
                     new BrandCategory
                     {
@@ -170,153 +170,260 @@ namespace Intelligent_Retail2.Models
                         ProductID = "10007",
                         CategoryID = "1000",
                         BrandID = "1002",
-                        ProductName = "可口可乐330ml",
+                        ProductName = "康师傅冰红茶柠檬味500ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "500",
+                        ProductPrice = "3",
+                        ProductStock = 1534,
+                        ProductSale = 256
                     },
                     new CommodityManage
                     {
                         ProductID = "10008",
-                        CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        CategoryID = "1001",
+                        BrandID = "1002",
+                        ProductName = "康师傅矿泉水550ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "550",
+                        ProductPrice = "2",
+                        ProductStock = 2543,
+                        ProductSale = 564
                     },
                     new CommodityManage
                     {
                         ProductID = "10009",
                         CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        BrandID = "1002",
+                        ProductName = "康师傅酸梅汤500ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "500",
+                        ProductPrice = "3",
+                        ProductStock = 976,
+                        ProductSale = 143
                     },
                     new CommodityManage
                     {
                         ProductID = "10010",
                         CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        BrandID = "1003",
+                        ProductName = "维他奶柠檬茶250ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
+                        ProductWeight = "250",
                         ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductStock = 2451,
+                        ProductSale = 643
                     }, 
                     new CommodityManage
                     {
                         ProductID = "10011",
                         CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        BrandID = "1003",
+                        ProductName = "维他奶原为豆奶250ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
+                        ProductWeight = "250",
                         ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductStock = 1672,
+                        ProductSale = 346
                     },
                     new CommodityManage
                     {
                         ProductID = "10012",
                         CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        BrandID = "1003",
+                        ProductName = "维他奶无糖杭白菊花茶500ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "500",
+                        ProductPrice = "4",
+                        ProductStock = 1378,
+                        ProductSale = 243
                     },
                     new CommodityManage
                     {
                         ProductID = "10013",
-                        CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        CategoryID = "1001",
+                        BrandID = "1004",
+                        ProductName = "哇哈哈纯净饮用水596ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "596",
+                        ProductPrice = "1.5",
+                        ProductStock = 1465,
+                        ProductSale = 211
                     },
                     new CommodityManage
                     {
                         ProductID = "10014",
                         CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        BrandID = "1004",
+                        ProductName = "哇哈哈营养快线原味500ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "500",
+                        ProductPrice = "4",
+                        ProductStock = 1323,
+                        ProductSale = 255
                     },
                     new CommodityManage
                     {
                         ProductID = "10015",
                         CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        BrandID = "1004",
+                        ProductName = "哇哈哈无糖苏打水350ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "350",
+                        ProductPrice = "3",
+                        ProductStock = 1211,
+                        ProductSale = 156
                     },
                     new CommodityManage
                     {
                         ProductID = "10016",
                         CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        BrandID = "1005",
+                        ProductName = "红牛维生素功能饮料250ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "250",
+                        ProductPrice = "4.5",
+                        ProductStock = 1566,
+                        ProductSale = 344
                     },
                     new CommodityManage
                     {
                         ProductID = "10017",
                         CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        BrandID = "1006",
+                        ProductName = "统一阿萨姆奶茶原味500ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "500",
+                        ProductPrice = "3.5",
+                        ProductStock = 1643,
+                        ProductSale = 167
                     },
                     new CommodityManage
                     {
                         ProductID = "10018",
-                        CategoryID = "1000",
-                        BrandID = "1000",
-                        ProductName = "可口可乐330ml",
+                        CategoryID = "1001",
+                        BrandID = "1006",
+                        ProductName = "统一爱夸饮用矿泉水360ml",
                         ProductImage = "图片路径",
-                        ProductWeight = "330",
-                        ProductPrice = "2.5",
-                        ProductStock = 1000,
-                        ProductSale = 199
+                        ProductWeight = "360",
+                        ProductPrice = "2",
+                        ProductStock = 1451,
+                        ProductSale = 256
                     }
 
                     );
+                context.DeviceManage.AddRange(
+                    new DeviceManage
+                    {
+                        DeviceID = "10001",
+                        DeviceNumber = "fPTs7J0lDr19D8wfiiOy",
+                        DeviceProductKey = "a1fG8uBWpxK",
+                        DeviceSecret = "DWVFIBvJj5wIMLQWEfz3kw5T9kGdYdt5",
+                        DeviceProvince = "广东",
+                        DeviceCity = "佛山",
+                        DeviceAddress = "顺德创新设计研究院1楼",
+                        DeviceSetDay = new DateTime(2019,8,30)
+                    }
 
-                
-                    
-
-                    
-                
+                    );
+                context.DeviceProduct.AddRange(
+                    new DeviceProduct
+                    {
+                        DeviceID = "10001",
+                        ProductID = "10002",
+                        DeviceProductStock = 10,
+                        DeviceProductSale = 3
+                    },
+                    new DeviceProduct
+                    {
+                        DeviceID = "10001",
+                        ProductID = "10003",
+                        DeviceProductStock = 8,
+                        DeviceProductSale = 4
+                    },
+                    new DeviceProduct
+                    {
+                        DeviceID = "10001",
+                        ProductID = "10005",
+                        DeviceProductStock = 12,
+                        DeviceProductSale = 5
+                    },
+                    new DeviceProduct
+                    {
+                        DeviceID = "10001",
+                        ProductID = "10008",
+                        DeviceProductStock = 6,
+                        DeviceProductSale = 2
+                    },
+                    new DeviceProduct
+                    {
+                        DeviceID = "10001",
+                        ProductID = "10010",
+                        DeviceProductStock = 14,
+                        DeviceProductSale = 7
+                    },
+                    new DeviceProduct
+                    {
+                        DeviceID = "10001",
+                        ProductID = "10012",
+                        DeviceProductStock = 11,
+                        DeviceProductSale = 2
+                    },
+                    new DeviceProduct
+                    {
+                        DeviceID = "10001",
+                        ProductID = "10014",
+                        DeviceProductStock = 10,
+                        DeviceProductSale = 4
+                    },
+                    new DeviceProduct
+                    {
+                        DeviceID = "10001",
+                        ProductID = "10016",
+                        DeviceProductStock = 15,
+                        DeviceProductSale = 7
+                    }
+                    );
+                context.ProductCategory.AddRange(
+                    new ProductCategory
+                    {
+                        CategoryID = "1000",
+                        CategoryName = "饮料/乳饮料",
+                        CategoryInfo = "分类的备注信息"
+                    },
+                    new ProductCategory
+                    {
+                        CategoryID = "1001",
+                        CategoryName = "矿泉水/纯净水",
+                        CategoryInfo = "分类的备注信息"
+                    }
+                    );
+                context.User.AddRange(
+                    new User
+                    {
+                        UserNickName = "Bobby",
+                        UserOpenID = "111111111",
+                        UserPhone = "17607000000",
+                        UserGender = "男",
+                        UserBirthday = new DateTime(2019,9,16)
+                    }
+                    );
+                context.UserOrder.AddRange(
+                    new UserOrder
+                    {
+                        UserOrderID = "10000001",
+                        UserPhone = "17607000000",
+                        ProductID = "1008",
+                        ProductNumber = 2
+                    },
+                    new UserOrder
+                    {
+                        UserOrderID = "10000001",
+                        UserPhone = "17607000000",
+                        ProductID = "10016",
+                        ProductNumber = 1
+                    }
+                    );
+              
                 context.SaveChanges();
             }
         }
