@@ -58,6 +58,7 @@ namespace Intelligent_Retail2
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

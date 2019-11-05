@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Intelligent_Retail2.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Intelligent_Retail2.Models
 {
-    public class Intelligent_Retail2Context : DbContext
+    public class Intelligent_Retail2Context : IdentityDbContext
     {
         public Intelligent_Retail2Context (DbContextOptions<Intelligent_Retail2Context> options)
             : base(options)
